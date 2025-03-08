@@ -5,8 +5,8 @@
 
 body {
   height: 100vh;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  display: flex;
+  flex-direction: column;
   background-color: #ef5350;
 }
 
@@ -18,31 +18,11 @@ header {
   font-size: 20px;
 }
 
-.library {
-  display: grid;
-  padding: 10px;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  font-size: 18px;
-}
-
-.book {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #795548;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border: 5px solid #42312a;
-  border-radius: 10px;
-  color: white;
-}
-
 .new-book {
   background-color: #41337a;
   text-align: center;
   padding: 10px;
+  margin-top: auto;
 }
 
 button {
@@ -76,6 +56,10 @@ form > div {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.info > div {
+  display: flex;
 }
 
 input[type="text"],

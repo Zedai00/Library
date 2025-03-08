@@ -24,6 +24,11 @@ function displayBooks() {
     author.innerText = `Author: ${book.author}`
     let pages = document.createElement("div")
     pages.innerText = `Pages: ${book.pages}`
+    let info = document.createElement("div")
+    info.classList.add("info")
+
+    let readBtn = document.createElement("button")
+    readBtn.clas
     let b = document.createElement("div")
     b.classList.add("book");
     b.appendChild(title)
@@ -37,7 +42,7 @@ for (let i = 0; i < 10; i++) {
   addBookToLibrary("abc", "def", 12, true)
 }
 
-displayBooks()
+// displayBooks()
 
 const showButton = document.querySelector("#showButton")
 const bookDialog = document.querySelector("#bookDialog")
